@@ -107,5 +107,33 @@ img{
 
 .container__content__description{
     text-align: center;
+    margin-block-start: 2em;
     font-family: 'Open Sans', sans-serif;
 }
+
+.productive-image{
+    margin-inline: 2em;
+    margin-block-start: 5em;
+}
+
+.productive-title{
+    font-size: 1.4em;
+    margin-block-start: 1.5em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.productive-description{
+    font-family: 'Open Sans', sans-serif;
+    margin-inline: 2em;
+    margin-block-start: 1.5em;
+}
+
+.productive-button{
+    margin-block-start: 1.5em;
+    margin-inline: 2em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+}
+
