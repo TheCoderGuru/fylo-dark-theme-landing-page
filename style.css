@@ -129,11 +129,37 @@ img{
     margin-block-start: 1.5em;
 }
 
-.productive-button{
+.productive-button-container{
     margin-block-start: 1.5em;
     margin-inline: 2em;
     color: white;
+    position: relative;
     font-family: 'Open Sans', sans-serif;
     display: block;
 }
 
+
+.productive-button-container::after{
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid red;
+}
+
+.author-flex{
+    display: flex;
+}
+
+.avatar{
+    height: 3em;
+    border-radius: 50%;
+}
+
+.testimonials-grid{
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.testimonial{
+    background-color: var(--cyan);
+    padding: 2em;
+}
