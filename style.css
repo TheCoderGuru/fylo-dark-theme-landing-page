@@ -243,9 +243,60 @@ img {
   font-family: 'Raleway', sans-serif;
 }
 
-@media only screen and ( max-width: 1440px ) {
+@media only screen and ( min-width: 1440px ) {
   .container__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: 4em;
+    margin-block-start: 5em;
+  }
+
+  .container__content:nth-child(1){
+    margin-block-start: 0;
+  }
+
+  .container__title{
+    padding-inline: 28em;
+    line-height: 1.5;
+  }
+
+  .container__hero-image{
+    height: 23em;
+  }
+  .container__description{
+    text-align: center;
+    padding-inline: 44em;
+  }
+
+  .productive-image{
     display: flex;
-    flex-direction: row;
+    margin: 0 auto;
+  }
+  .productive-container{
+    display: grid;
+    margin-block-start: 4em;
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .testimonials-grid{
+    margin-block-start: 5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonial:first-child{
+    margin-block-start: 0;
+  }
+
+  .popup-box{
+    width: fit-content;
+    display: grid;
+    margin: 0 auto;
+    place-items: center;
+  }
+
+  .description{
+    padding-inline: 23em;
   }
 }
+
